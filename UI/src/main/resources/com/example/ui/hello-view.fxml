@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<VBox fx:id="root"
+      alignment="CENTER_LEFT"
+      prefHeight="85.0"
+      prefWidth="320.0"
+      styleClass="bk"
+      stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.ui.HelloController">
+
+    <padding>
+        <Insets top="10.0" right="12.0" bottom="10.0" left="12.0"/>
+    </padding>
+
+    <HBox spacing="12.0" alignment="CENTER_LEFT">
+        <!-- Capa do álbum -->
+        <StackPane prefWidth="60" prefHeight="60">
+            <!-- Capa -->
+            <ImageView fx:id="albumImage"
+                       fitWidth="60"
+                       fitHeight="60"
+                       preserveRatio="false"
+                       smooth="true"
+                       styleClass="album-art"/>
+
+            <!-- Logo Spotify -->
+            <ImageView fx:id="spotifyLogo"
+                       fitWidth="18"
+                       fitHeight="18"
+                       preserveRatio="true"
+                       styleClass="logo-overlay"/>
+        </StackPane>
+
+
+
+
+        <!-- Informações da faixa -->
+        <VBox spacing="2.0" alignment="CENTER_LEFT">
+            <Label fx:id="trackTitle" styleClass="track-title"/>
+            <Label fx:id="trackInfo" styleClass="track-info"/>
+            <Label fx:id="trackTime" styleClass="track-time"/>
+        </VBox>
+
+    </HBox>
+</VBox>

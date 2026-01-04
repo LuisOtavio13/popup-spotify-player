@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch JavaFX",
+      "request": "launch",
+      "mainClass": "HelloFX",
+      "vmArgs": "--module-path /home/luis/javafx-sdk-17/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

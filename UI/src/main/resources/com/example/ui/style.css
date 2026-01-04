@@ -1,5 +1,40 @@
-
 .bk {
-    -fx-background-color: #000;
-
+    -fx-background-color: rgba(0, 0, 0, 0.75);
+    -fx-background-radius: 15;
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
 }
+
+.album-art {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 8, 0.3, 0, 2);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.track-title {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.track-info {
+    -fx-text-fill: lightgray;
+    -fx-font-size: 12px;
+}
+
+.track-time {
+    -fx-text-fill: gray;
+    -fx-font-size: 11px;
+}
+.album-art {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 8, 0.4, 0, 3);
+}
+
+.logo-overlay {
+    -fx-translate-x: 18;
+    -fx-translate-y: 18;
+}
+
+
+

@@ -3,3 +3,10 @@ target/
 *.log
 *.class
 *.jar
+/dist/
+*.deb
+*.rpm
+*.exe
+*.msi
+.idea/
+.mvn/
